@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evaluador UMAE — Política de privacidad</title>
+  <style>
+    :root { --verde: #004B23; --verde2: #007B3A; --fondo: #f2f5f3;
+            --tarjeta: #ffffff; --texto: #222222; --tenue: #5a6b60; --borde: #d5ddd8; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fondo: #101814; --tarjeta: #18221d; --texto: #e6ece8;
+              --tenue: #a3b3aa; --borde: #2c3a33; --verde2: #4fbf7d; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+           background: var(--fondo); color: var(--texto); line-height: 1.6; }
+    header { background: var(--verde); color: #fff; padding: 22px 20px; }
+    header h1 { margin: 0; font-size: 1.35rem; font-weight: 600; }
+    header p { margin: 4px 0 0; opacity: .85; font-size: .95rem; }
+    main { max-width: 760px; margin: 24px auto; padding: 0 16px 40px; }
+    section { background: var(--tarjeta); border: 1px solid var(--borde);
+              border-radius: 10px; padding: 18px 22px; margin-bottom: 16px; }
+    h2 { color: var(--verde2); font-size: 1.05rem; margin: 0 0 8px; }
+    ul { padding-left: 20px; margin: 6px 0; }
+    a { color: var(--verde2); }
+    .tenue { color: var(--tenue); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Evaluador UMAE — Política de privacidad</h1>
+    <p>Aplicación móvil para el registro de evaluaciones de unidades médicas, sin conexión</p>
+  </header>
+  <main>
+    <section>
+      <h2>1. Qué es la aplicación y a quién va dirigida</h2>
+      <p>Evaluador UMAE es una herramienta de trabajo para el personal evaluador autorizado
+      del Instituto Mexicano del Seguro Social (IMSS). Permite capturar, sin conexión a internet,
+      las evaluaciones de cumplimiento de las unidades médicas (respuestas a criterios, comentarios,
+      seguimientos y fotografías de evidencia) y entregarlas después a los servidores institucionales.</p>
+      <p>La aplicación <strong>no está dirigida al público en general</strong>: para usarla se requiere
+      un paquete de trabajo cifrado que se obtiene con una cuenta del Sistema Evaluador del IMSS.
+      <strong>No registra pacientes ni expedientes clínicos.</strong></p>
+    </section>
+
+    <section>
+      <h2>2. Datos que maneja la aplicación</h2>
+      <ul>
+        <li><strong>Del evaluador:</strong> usuario, nombre, matrícula y rol, incluidos en el paquete de trabajo
+        que descarga el propio evaluador. Si el usuario es compartido por un equipo, también el nombre
+        de quien captura.</li>
+        <li><strong>De la evaluación:</strong> unidad evaluada, fecha, respuestas a los criterios, comentarios,
+        seguimientos y la persona de la unidad asignada a cada seguimiento.</li>
+        <li><strong>Fotografías de evidencia:</strong> solo las que el evaluador toma con la cámara o elige de su
+        galería de forma voluntaria para documentar un seguimiento.</li>
+        <li><strong>Catálogos institucionales:</strong> unidades médicas, criterios de evaluación y nombres del
+        personal registrado en el sistema, necesarios para trabajar sin conexión.</li>
+      </ul>
+      <p>La aplicación <strong>no</strong> recopila ubicación, contactos, identificadores de publicidad ni datos
+      de salud, y <strong>no graba audio</strong>.</p>
+    </section>
+
+    <section>
+      <h2>3. Permisos del teléfono</h2>
+      <ul>
+        <li><strong>Cámara:</strong> para tomar fotografías de evidencia, solo cuando el evaluador lo solicita.</li>
+        <li><strong>Fotos:</strong> para elegir fotografías de evidencia ya existentes, solo cuando el evaluador lo solicita.</li>
+      </ul>
+      <p>Si se niega un permiso, la aplicación sigue funcionando; únicamente no podrá adjuntar fotografías por esa vía.</p>
+    </section>
+
+    <section>
+      <h2>4. Dónde se guarda y a quién se envía</h2>
+      <ul>
+        <li>Toda la información se guarda <strong>únicamente en el teléfono</strong> mientras se captura.</li>
+        <li>Solo sale del teléfono cuando el evaluador decide enviarla: por sincronización con el servidor
+        institucional del IMSS (conexión cifrada HTTPS) o compartiendo el archivo de entrega con la hoja de
+        compartir del sistema. En este último caso, la aplicación que el evaluador elija (por ejemplo, correo
+        o mensajería) trata el archivo conforme a sus propias condiciones.</li>
+        <li>La información se usa exclusivamente para fines institucionales de evaluación y seguimiento de
+        unidades médicas.</li>
+        <li><strong>No se vende, no se comparte con terceros y no se usa con fines publicitarios.</strong></li>
+        <li>La aplicación <strong>no incluye</strong> herramientas de analítica, publicidad ni rastreo de terceros,
+        y no rastrea al usuario entre aplicaciones o sitios web.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Seguridad</h2>
+      <ul>
+        <li>El paquete de trabajo viaja cifrado (AES-256-GCM) con una llave derivada de la contraseña del evaluador;
+        sin esa contraseña no puede abrirse.</li>
+        <li>Los archivos de entrega van firmados digitalmente para que el servidor verifique su origen e integridad.</li>
+        <li>El paquete tiene vigencia limitada; al vencer ya no permite crear evaluaciones nuevas ni sincronizar.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Conservación y eliminación</h2>
+      <p>Los datos permanecen en el teléfono hasta que el evaluador elimina las evaluaciones ya confirmadas por
+      el servidor o desinstala la aplicación; al desinstalarla se borra toda la información local. La información
+      entregada al IMSS se conserva y trata conforme a la normativa institucional.</p>
+    </section>
+
+    <section>
+      <h2>7. Tratamiento institucional y derechos ARCO</h2>
+      <p>Los datos entregados a los servidores del IMSS se tratan conforme a la legislación mexicana de protección
+      de datos personales en posesión de sujetos obligados y a los avisos de privacidad del Instituto, disponibles en
+      <a href="https://www.imss.gob.mx/avisos-privacidad">www.imss.gob.mx/avisos-privacidad</a>.
+      Los derechos de acceso, rectificación, cancelación y oposición pueden ejercerse ante la Unidad de Transparencia
+      del IMSS (<a href="mailto:unidad.transparencia@imss.gob.mx">unidad.transparencia@imss.gob.mx</a>) o mediante la
+      <a href="https://www.plataformadetransparencia.org.mx">Plataforma Nacional de Transparencia</a>.</p>
+    </section>
+
+    <section>
+      <h2>8. Contacto</h2>
+      <p>Dudas sobre la aplicación: Israel de Lira Viveros, desarrollador —
+      <a href="mailto:israel.delira@imss.gob.mx">israel.delira@imss.gob.mx</a>.</p>
+      <p>Cualquier cambio a esta política se publicará en esta misma página.</p>
+      <p class="tenue">Última actualización: 30/10/2026</p>
+    </section>
+
+    <section lang="en">
+      <h2>Summary in English</h2>
+      <p>Evaluador UMAE is an internal work tool for authorized evaluators of the Mexican Social Security Institute (IMSS).
+      It records quality evaluations of medical facilities offline. It does not handle patient or health data. Data
+      (evaluator name and ID, evaluation answers, comments and evidence photos taken voluntarily) stays on the device
+      until the evaluator sends it to IMSS servers over HTTPS or shares the delivery file. No data is sold or shared
+      with third parties, there are no analytics, ads or tracking SDKs, and the app does not record audio. Uninstalling
+      the app deletes all local data. Contact: israel.delira@imss.gob.mx.</p>
+    </section>
+  </main>
+</body>
+</html>
